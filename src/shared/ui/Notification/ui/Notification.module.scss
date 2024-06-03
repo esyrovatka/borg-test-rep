@@ -1,0 +1,35 @@
+.notification {
+  display: none;
+
+  &.isActive {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 44px;
+    z-index: 9;
+    background-color: rgb($color-background, 70%);
+    max-width: 310px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 6px;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}

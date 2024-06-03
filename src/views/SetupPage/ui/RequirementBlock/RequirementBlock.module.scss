@@ -1,0 +1,53 @@
+.block {
+  display: flex;
+  gap: 12px;
+
+  &__number {
+    font-size: $fs-24;
+    line-height: $lh-28;
+  }
+
+  &__card {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__title {
+    font-size: $fs-18;
+    line-height: $lh-24;
+  }
+
+  &__text {
+    font-size: $fs-12;
+    line-height: $lh-16;
+  }
+
+  @include tablet {
+    gap: 32px;
+
+    &__card {
+      padding: 24px;
+    }
+  }
+
+  @include tablet {
+    &__card {
+      padding: 20px 24px;
+    }
+
+    &__number {
+      font-size: $fs-32;
+      line-height: $lh-34;
+    }
+
+    &__title {
+      font-size: $fs-24;
+      line-height: $lh-28;
+    }
+
+    &__text {
+      font-size: $fs-16;
+      line-height: $lh-22;
+    }
+  }
+}

@@ -1,0 +1,209 @@
+.menu {
+  &__icon {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    overflow: hidden;
+    @include transition();
+
+    &.isVisible {
+      height: calc(100dvh - 60px);
+
+      @include tablet {
+        height: calc(100dvh - 80px);
+      }
+    }
+  }
+
+  &__nav {
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: $color-background;
+
+    &--item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      cursor: pointer;
+
+      &__icon {
+        height: 48px;
+        width: 48px;
+        padding: 12px;
+        background-color: $color-neutral-dark40;
+        border-radius: 10px;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+
+        path {
+          fill: $color-white;
+        }
+      }
+
+      &:hover,
+      &.isActive {
+        .menu__nav--item__label {
+          color: $color-primary-original;
+        }
+
+        svg {
+          path {
+            fill: $color-primary-original;
+          }
+        }
+      }
+
+      &.isStroke {
+        svg {
+          path {
+            fill: none;
+            stroke: $color-white;
+          }
+        }
+      }
+
+      &.isStroke:hover,
+      &.isStroke.isActive {
+        svg {
+          path {
+            stroke: $color-primary-original;
+          }
+        }
+      }
+    }
+  }
+
+  &__profile {
+    border-top: 1px solid $color-neutral-dark40;
+    position: relative;
+    padding: 20px;
+
+    &__shadow {
+      position: absolute;
+      right: 0;
+      top: -60px;
+    }
+
+    &__login {
+      color: $color-neutral-light40;
+      @include transition();
+
+      svg {
+        path {
+          @include transition();
+          stroke: $color-neutral-light40;
+        }
+      }
+
+      &:hover {
+        color: $color-primary-original;
+
+        svg {
+          path {
+            stroke: $color-primary-original;
+          }
+        }
+      }
+    }
+  }
+
+  &__profile-login {
+    display: flex;
+    padding: 0;
+    gap: 8px;
+    align-items: center;
+    z-index: 4;
+    position: relative;
+
+    .text {
+      opacity: 1;
+      @include transition(opacity, 3s);
+    }
+
+    &:hover {
+      .text {
+        color: $color-primary-original;
+      }
+
+      path {
+        stroke: $color-primary-original;
+      }
+    }
+  }
+
+  &__profile--info {
+    display: flex;
+    gap: 8px;
+    overflow: hidden;
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    &__name {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__progress {
+      width: 104px;
+      width: 100%;
+      height: 2px;
+      background-color: $color-neutral-dark40;
+      border-radius: 9px;
+      overflow: hidden;
+
+      &::-webkit-progress-bar {
+        background-color: $color-neutral-dark40;
+        border-radius: 9px;
+      }
+
+      &::-webkit-progress-value {
+        height: 100%;
+        background: $color-primary-original;
+      }
+    }
+
+    &__size {
+      font-size: $fs-12;
+      line-height: $lh-16;
+    }
+
+    &__avatar {
+      border-radius: 50%;
+      z-index: 9;
+    }
+  }
+
+  &__logout {
+    position: absolute;
+    bottom: 140px;
+  }
+
+  @include tablet {
+    &__content {
+      top: 80px;
+      max-width: 375px;
+    }
+  }
+}

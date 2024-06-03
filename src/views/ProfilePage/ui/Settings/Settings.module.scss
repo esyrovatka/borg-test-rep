@@ -1,0 +1,102 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 850px;
+
+  &__title {
+    font-size: $fs-24;
+    line-height: $lh-28;
+  }
+
+  &__params {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+    background-color: rgba($color-background, 0.5);
+
+    &__title {
+      font-size: $fs-18;
+      line-height: $lh-24;
+    }
+  }
+
+  &__slider {
+    max-width: 300px;
+    margin: 0;
+
+    &__slide {
+      text-align: center;
+      height: 35px;
+    }
+
+    &__text {
+      font-size: $fs-18;
+      line-height: $lh-24;
+    }
+
+    &__pagination {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      gap: 3px;
+      margin-top: 4px;
+
+      span {
+        background-color: $color-neutral-dark40;
+        border-radius: 0;
+        width: 80px;
+        height: 3px;
+        opacity: 1;
+      }
+    }
+
+    &__nav {
+      position: absolute;
+      top: 0px;
+      transform: translate(0, 50%);
+      z-index: 9;
+      cursor: pointer;
+
+      &.isNext {
+        right: 0;
+        transform: rotate(180deg) translate(0, -50%);
+      }
+
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+
+  @include tablet {
+    &__params {
+      padding: 24px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &__title {
+        font-weight: 700 !important;
+        font-size: $fs-24;
+        line-height: $lh-28;
+      }
+    }
+
+    &__slider {
+      &__pagination {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  @include desktop {
+    gap: 24px;
+
+    &__title {
+      font-size: $fs-32;
+      line-height: $lh-34;
+    }
+  }
+}

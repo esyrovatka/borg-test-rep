@@ -1,0 +1,21 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  &__title {
+    margin-top: 4px;
+    font-size: $fs-32;
+    line-height: $lh-34;
+
+    @include tablet {
+      font-size: $fs-36;
+      line-height: $lh-40;
+    }
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+}

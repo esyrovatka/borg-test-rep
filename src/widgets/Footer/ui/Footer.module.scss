@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid $color-neutral-dark40;
+  background-color: $color-background;
+  text-align: center;
+  padding: 12px;
+  color: $color-neutral-light70;
+
+  &__text {
+    font-size: $fs-12;
+    line-height: $lh-16;
+  }
+
+  @include tablet {
+    padding: 20px 0 18px;
+
+    &__text {
+      font-size: $fs-16;
+      line-height: $lh-22;
+    }
+  }
+
+  @include desktop {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    @include transition();
+
+    &.isOpen {
+      width: calc(100% - 200px);
+      margin-left: 200px;
+    }
+  }
+}

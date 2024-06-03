@@ -1,0 +1,80 @@
+.activity {
+  max-width: 850px;
+
+  &__title {
+    font-size: $fs-24;
+    line-height: $lh-28;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  &__card {
+    padding: 8px;
+    border: 1px solid $color-neutral-dark40;
+    background-color: $color-background;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__title {
+      font-size: $fs-18;
+      line-height: $lh-24;
+    }
+
+    &__text {
+      font-size: $fs-16;
+      line-height: $lh-22;
+    }
+
+    &__green {
+      color: $color-primary-original;
+      font-weight: 600;
+      font-size: $fs-18;
+      line-height: $lh-24;
+    }
+
+    &__white {
+      color: $color-white;
+      font-weight: 600;
+      font-size: $fs-18;
+      line-height: $lh-24;
+    }
+  }
+
+  &__card--content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  @include tablet {
+    &__card {
+      flex-direction: row;
+      align-items: center;
+      gap: 18px;
+      padding: 12px 16px;
+
+      &__title {
+        font-size: $fs-24;
+        line-height: $lh-28;
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  @include desktop {
+    &__title {
+      font-size: $fs-32;
+      line-height: $lh-34;
+    }
+
+    &__card {
+      gap: 24px;
+    }
+  }
+}

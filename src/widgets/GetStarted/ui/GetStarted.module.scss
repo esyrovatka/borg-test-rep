@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    font-size: $fs-24;
+    line-height: $lh-28;
+  }
+
+  &__text {
+    font-size: $fs-14;
+    line-height: $lh-20;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 21px;
+
+    &__title {
+      font-size: $fs-32;
+      line-height: $lh-34;
+    }
+
+    &__text {
+      font-size: $fs-16;
+      line-height: $lh-22;
+    }
+  }
+
+  @include tablet {
+    &__title {
+      font-size: $fs-36;
+      line-height: $lh-46;
+    }
+
+    &__text {
+      font-size: $fs-16;
+      line-height: $lh-22;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import "breakpoints";
+
+$color-primary-dark70: #334100;
+$color-primary-dark40: #658100;
+$color-primary-original: #a9d800;
+$color-primary-light40: #dbf056;
+$color-primary-light70: #e5f3b3;
+
+$color-neutral-dark70: #1c1c1c;
+$color-neutral-dark40: #323232;
+$color-neutral-original: #606060;
+$color-neutral-light40: #8d8d8d;
+$color-neutral-light70: #bbbbbb;
+$color-neutral-light90: #e8e8e8;
+
+$color-background: #18191a;
+$color-black: #111111;
+$color-error: #e02b1d;
+$color-warning: #ffc048;
+$color-success: #009262;
+$color-white: #fff;
+
+$basic-gradient: linear-gradient(to right, $color-neutral-dark40, $color-primary-original);
+$inverted-gradient: linear-gradient(to left, $color-neutral-dark40, $color-primary-original);
+
+$header-height: 60px;
+
+@include tablet {
+  $header-height: 80px;
+}
+
+@include desktop {
+  $header-height: 90px;
+}
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+$fw-900: 900;
+
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-24: 24px;
+$fs-32: 32px;
+$fs-36: 36px;
+
+$lh-16: 16px;
+$lh-18: 18px;
+$lh-20: 20px;
+$lh-22: 22px;
+$lh-24: 24px;
+$lh-28: 28px;
+$lh-34: 34px;
+$lh-40: 40px;
+$lh-46: 46px;

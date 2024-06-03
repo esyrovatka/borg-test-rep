@@ -1,0 +1,74 @@
+.text {
+  &.primary {
+    color: $color-primary-original;
+  }
+
+  &.secondary {
+    color: $color-neutral-light70;
+  }
+
+  &.gray {
+    color: $color-neutral-light40;
+  }
+
+  &.white {
+    color: $color-white;
+  }
+
+  &.light {
+    color: $color-neutral-light90;
+  }
+
+  &.warning {
+    color: $color-warning;
+  }
+
+  &.m {
+    font-size: $fs-14;
+    line-height: $lh-20;
+
+    @include tablet {
+      font-size: $fs-16;
+      line-height: $lh-22;
+    }
+  }
+
+  &.xl {
+    font-size: $fs-24;
+    line-height: $lh-28;
+
+    @include tablet {
+      font-size: $fs-32;
+      line-height: $lh-34;
+    }
+
+    @include desktop {
+      font-size: $fs-36;
+      line-height: $lh-40;
+    }
+  }
+
+  &.four {
+    font-weight: $fw-400;
+  }
+
+  &.five {
+    font-weight: $fw-500;
+  }
+
+  &.six {
+    font-weight: $fw-600;
+  }
+
+  &.seven {
+    font-weight: $fw-700;
+  }
+
+  &.eight {
+    font-weight: $fw-700;
+  }
+
+  &.nine {
+    font-weight: $fw-800;
+  }
+}

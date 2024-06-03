@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 60px;
+  padding: 24px 15px;
+  height: 100dvh;
+
+  @include transition();
+
+  &__title {
+    font-size: $fs-24;
+    line-height: $lh-28;
+  }
+
+  @include tablet {
+    margin-top: 80px;
+    padding: 24px 45px;
+
+    &__title {
+      font-size: $fs-32;
+      line-height: $lh-34;
+    }
+  }
+
+  @include desktop {
+    padding: 32px 40px;
+    margin-top: 90px;
+    margin-left: 80px;
+
+    &__title {
+      font-size: $fs-36;
+      line-height: $lh-40;
+    }
+
+    &.isOpen {
+      margin-left: 200px;
+    }
+  }
+}

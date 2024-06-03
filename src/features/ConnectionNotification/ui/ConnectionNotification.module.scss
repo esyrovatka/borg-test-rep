@@ -1,0 +1,21 @@
+.notification {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba($color-background, 0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 7px;
+  z-index: 1005;
+
+  &.isVisible {
+    display: flex;
+  }
+
+  &__text {
+    font-size: $fs-16;
+    line-height: $lh-22;
+  }
+}

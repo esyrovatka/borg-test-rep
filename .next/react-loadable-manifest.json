@@ -1,0 +1,16 @@
+{
+  "node_modules/@azure/msal-browser/dist/controllers/ControllerFactory.mjs -> ./NestedAppAuthController.mjs": {
+    "id": 4920,
+    "files": [
+      "static/chunks/920.49f7e8a65fed7490.js"
+    ]
+  },
+  "node_modules/@azure/msal-browser/dist/controllers/ControllerFactory.mjs -> ./StandardController.mjs": {
+    "id": 1483,
+    "files": []
+  },
+  "node_modules/@azure/msal-browser/dist/telemetry/BrowserPerformanceClient.mjs -> ./BrowserPerformanceMeasurement.mjs": {
+    "id": null,
+    "files": []
+  }
+}

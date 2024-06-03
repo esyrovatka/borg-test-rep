@@ -1,0 +1,114 @@
+.navBar {
+  border-bottom: 1px solid $color-neutral-dark40;
+  padding: 10px 15px;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  z-index: 2;
+  background-color: $color-neutral-dark70;
+  width: 100%;
+
+  .tabletSearch {
+    padding: 0 15px;
+  }
+
+  .tabletSearch {
+    display: none;
+  }
+
+  .shadow {
+    position: absolute;
+    left: 0;
+    top: -15px;
+  }
+
+  &__result {
+    position: absolute;
+    z-index: 9;
+    top: 90px;
+    width: calc(100% - 20px);
+    background-color: $color-neutral-dark70;
+    display: none;
+    padding-bottom: 16px;
+
+    &.isVisible {
+      display: block;
+    }
+  }
+
+  &__result--list {
+    border: 1px solid $color-neutral-dark40;
+    padding: 16px 24px;
+    margin: 0 75px 0 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 150px;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-neutral-light70;
+      border-radius: 8px;
+    }
+
+    &__item {
+      height: 36px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    &__image {
+      object-fit: contain;
+    }
+  }
+
+  @include tablet {
+    height: 80px;
+
+    .tabletSearch {
+      display: flex;
+      width: 100%;
+      height: 48px;
+    }
+
+    .shadow {
+      width: 95px;
+      height: 95px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  @include desktop {
+    border-bottom: none;
+    height: 90px;
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    @include transition();
+    padding: 0 40px;
+
+    &.isOpen {
+      margin-left: 180px;
+      width: calc(100% - 180px);
+    }
+
+    .logo,
+    .burger,
+    .shadow {
+      display: none;
+    }
+  }
+}

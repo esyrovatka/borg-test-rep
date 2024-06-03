@@ -1,0 +1,30 @@
+.wrapper {
+  padding: 20px 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 80px;
+
+  &__games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-right: 40px;
+  }
+
+  @include desktop {
+    gap: 56px;
+    margin-left: 80px;
+    max-width: calc(100vw - 80px);
+    @include transition();
+
+    &.isOpen {
+      max-width: calc(100vw - 200px);
+      margin-left: 200px;
+    }
+
+    &__games {
+      gap: 24px;
+    }
+  }
+}

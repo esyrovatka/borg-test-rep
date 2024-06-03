@@ -1,0 +1,43 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+
+  &__swiper {
+    padding: 10px;
+  }
+
+  &__slide {
+    max-width: max-content;
+  }
+
+  &__nav {
+    position: absolute;
+    right: 15px;
+    display: flex;
+    gap: 16px;
+    transform: translateY(25%);
+
+    @include tablet {
+      right: 45px;
+    }
+  }
+
+  &__nav-prev {
+    &__icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__nav-next,
+  &__nav-prev {
+    &__icon {
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+  }
+}

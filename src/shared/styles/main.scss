@@ -1,0 +1,31 @@
+@import "reset";
+@import "helper";
+
+.video {
+  max-width: 100dvw;
+  max-height: 100dvh;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: $color-black;
+
+  #stream {
+    width: 100dvw;
+    height: 100dvh;
+    background-color: $color-black;
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    object-fit: contain;
+  }
+}

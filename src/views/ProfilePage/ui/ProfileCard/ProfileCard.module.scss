@@ -1,0 +1,167 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  max-width: 850px;
+
+  &__info {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+  }
+
+  &__profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__edit {
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+
+  &__name {
+    font-size: $fs-18;
+    line-height: $lh-24;
+
+    @include tablet {
+      font-size: $fs-32;
+      line-height: $lh-34;
+    }
+  }
+
+  &__storage {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__drive--storage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__text {
+      font-size: $fs-14;
+      line-height: $lh-20;
+      margin-bottom: 4px;
+    }
+
+    &__progress {
+      width: 100%;
+      height: 2px;
+      background-color: $color-neutral-dark40;
+      border-radius: 9px;
+      overflow: hidden;
+
+      &::-webkit-progress-bar {
+        background-color: $color-neutral-dark40;
+        border-radius: 9px;
+      }
+
+      &::-webkit-progress-value {
+        height: 100%;
+        background: $color-primary-original;
+      }
+    }
+
+    &__info {
+      font-size: $fs-12;
+      line-height: $lh-16;
+      color: $color-neutral-original !important;
+    }
+
+    &__icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(80%);
+      }
+    }
+
+    @include tablet {
+      width: 200px;
+
+      &__text {
+        font-size: $fs-16;
+        line-height: $lh-22;
+      }
+    }
+
+    @include desktop {
+      width: 227px;
+    }
+  }
+
+  &__games--info {
+    display: flex;
+    gap: 48px;
+
+    &.isTablet {
+      display: none;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    &__title {
+      font-size: $fs-14;
+      line-height: $lh-20;
+    }
+
+    &__text {
+      font-size: $fs-18;
+      line-height: $lh-24;
+    }
+
+    @include tablet {
+      display: none;
+
+      &.isTablet {
+        display: flex;
+      }
+    }
+
+    @include desktop {
+      &__title {
+        font-size: $fs-16;
+        line-height: $lh-22;
+      }
+
+      &__text {
+        font-size: $fs-24;
+        line-height: $lh-28;
+      }
+    }
+  }
+
+  @include tablet {
+    background-color: $color-background;
+    padding: 24px;
+  }
+}

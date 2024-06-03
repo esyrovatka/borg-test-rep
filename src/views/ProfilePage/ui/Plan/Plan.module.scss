@@ -1,0 +1,234 @@
+.plan {
+  padding: 20px 16px;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  max-width: 850px;
+
+  &__title {
+    font-size: $fs-24;
+    line-height: $lh-28;
+  }
+
+  &__separator {
+    width: 100%;
+    height: 1px;
+    background-color: $color-neutral-dark40;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+    width: 100%;
+
+    &__params {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      text-align: center;
+    }
+
+    &__text {
+      position: relative;
+      width: max-content;
+      text-align: center;
+      font-size: $fs-14;
+      line-height: $lh-20;
+
+      &::before {
+        content: "";
+        background-image: url("/assets/icons/star.svg");
+        border: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 8px;
+        height: 8px;
+        left: -15px;
+        top: 3px;
+        box-sizing: border-box;
+      }
+
+      &.color {
+        &::before {
+          background-image: url("/assets/icons/star_color.svg");
+        }
+      }
+    }
+  }
+
+  &__selected--info {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 20px;
+  }
+
+  &__name {
+    font-size: $fs-14;
+    line-height: $lh-20;
+  }
+
+  &__coast {
+    font-size: $fs-36;
+    line-height: $lh-40;
+  }
+
+  &__choice {
+    display: flex;
+    padding: 4px;
+    background-color: $color-neutral-dark70;
+    border-radius: 4px;
+    position: relative;
+
+    &__sale {
+      position: absolute;
+      top: 3px;
+      right: 19px;
+      width: 28px;
+      height: 12px;
+      background-image: url("/assets/img/sales_bg.webp");
+      font-size: 8px;
+      line-height: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__variant {
+    width: 150px;
+    padding: 5px;
+    font-size: $fs-14;
+    line-height: $lh-20;
+    cursor: pointer;
+    border-radius: 4px;
+    @include transition();
+
+    &.isSelected {
+      background-color: $color-black;
+    }
+  }
+
+  &__btn {
+    scale: 0.85;
+  }
+
+  &__subscription {
+    display: none;
+  }
+
+  &__color--text {
+    color: $color-primary-original;
+  }
+
+  &__active {
+    font-size: $fs-12;
+    line-height: $lh-16;
+    text-align: left;
+    max-width: 181px;
+  }
+
+  @include tablet {
+    flex-direction: row;
+    gap: 20px;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__info {
+      height: 100%;
+      max-width: 295px;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 16px;
+
+      &__params {
+        align-items: flex-start;
+        gap: 2px;
+      }
+
+      &__text {
+        margin-left: 14px;
+        max-width: 193px;
+        text-align: left;
+        font-size: $fs-12;
+        line-height: $lh-16;
+      }
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    &__separator {
+      height: 100%;
+      width: 1px;
+    }
+
+    &__selection {
+      max-width: 295px;
+    }
+
+    &__variant {
+      width: 144px;
+      padding: 4px;
+      line-height: $lh-18;
+    }
+
+    &__subscription {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &__btn {
+        padding: 0;
+        margin: 0;
+        font-size: $fs-16;
+        font-weight: 700;
+        line-height: $lh-22;
+        color: $color-primary-light70;
+      }
+
+      &__text {
+        font-size: $fs-12;
+        line-height: $lh-16;
+        display: flex;
+        gap: 8px;
+      }
+    }
+  }
+
+  @include desktop {
+    padding: 24px;
+    gap: 40px;
+    justify-content: space-between;
+
+    &__info {
+      padding-right: 54px;
+      max-width: 334px;
+      &__image {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    &__selection {
+      max-width: 295px;
+    }
+  }
+}

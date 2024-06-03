@@ -1,0 +1,33 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+
+  &__title {
+    font-size: $fs-32;
+    line-height: $lh-34;
+    margin-bottom: 4px;
+  }
+
+  &__text {
+    font-size: $fs-14;
+    line-height: $lh-20;
+  }
+
+  &__register {
+    font-size: $fs-14;
+    line-height: $lh-18;
+    margin-bottom: 20px;
+  }
+
+  &__primary {
+    color: $color-primary-original;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(80%);
+    }
+  }
+}

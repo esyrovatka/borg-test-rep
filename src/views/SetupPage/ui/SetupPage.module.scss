@@ -1,0 +1,132 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 20px;
+
+  &__setup {
+    margin-top: 12px;
+  }
+
+  &__setup--title {
+    margin-bottom: 16px;
+    font-size: $fs-18;
+    line-height: $lh-24;
+  }
+
+  &__setup--info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__title {
+      font-size: $fs-18;
+      line-height: $lh-24;
+    }
+
+    &__text {
+      font-size: $fs-14;
+      line-height: $lh-20;
+    }
+
+    &__list {
+      color: $color-primary-light40;
+      margin-left: 16px;
+      font-size: $fs-14;
+      line-height: $lh-20;
+      font-weight: 500;
+    }
+  }
+
+  &__configure {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__image {
+      width: 100%;
+      height: auto;
+      max-width: 850px;
+      max-height: 477px;
+    }
+  }
+
+  &__validate {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__text {
+      font-size: $fs-14;
+      line-height: $lh-20;
+    }
+
+    &__image {
+      margin-bottom: 8px;
+    }
+  }
+
+  @include tablet {
+    margin: 96px 45px 45px;
+
+    &__setup--info {
+      padding: 24px;
+    }
+
+    &__setup--title {
+      font-size: $fs-24;
+      line-height: $lh-28;
+    }
+
+    &__setup--info {
+      &__title,
+      &__text,
+      &__list {
+        font-size: $fs-16;
+        line-height: $lh-22;
+      }
+    }
+
+    &__validate {
+      &__text {
+        font-size: $fs-14;
+        line-height: $lh-20;
+      }
+    }
+  }
+
+  @include desktop {
+    margin-left: 80px;
+    max-width: calc(100vw - 80px);
+    @include transition();
+
+    &.isOpen {
+      max-width: calc(100vw - 200px);
+      margin-left: 200px;
+    }
+
+    &__setup--info {
+      padding: 32px;
+      gap: 20px;
+    }
+
+    &__setup--title {
+      font-size: $fs-36;
+      line-height: $lh-46;
+    }
+
+    &__setup--info {
+      &__title {
+        font-size: $fs-24;
+        line-height: $lh-28;
+      }
+    }
+
+    &__validate {
+      &__text {
+        font-size: $fs-16;
+        line-height: $lh-22;
+      }
+    }
+  }
+}
