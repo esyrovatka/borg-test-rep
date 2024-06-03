@@ -1,0 +1,1341 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"Chakra_Petch","arguments":[{"weight":["400","500","600","700"],"style":["normal"],"subsets":["latin"],"display":"swap"}],"variableName":"chakra_petch"} ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* thai */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/a2ca1605c798ed19-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/3f27b95c281ce14d-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/d620aea515ea5e7c-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/_next/static/media/ad1715a5ea03ce0e-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/8a05a20265b0e33d-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/2ba89ef90c1f3be8-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/739c2153dda58a6d-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/_next/static/media/7e8ae1ae3d865da4-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/3b7374124c0e6ad4-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/0908a3150a593468-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/2a9b60047ed8a558-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/_next/static/media/c1254d613336d18b-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/10e99afd5d20dfcf-s.woff2) format('woff2');
+  unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/40c39069c2d8afd3-s.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/df3720bebd3e4ff4-s.woff2) format('woff2');
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: '__Chakra_Petch_e6c52c';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/_next/static/media/1a2bf3d736e66b1c-s.p.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}@font-face {font-family: '__Chakra_Petch_Fallback_e6c52c';src: local("Arial");ascent-override: 96.77%;descent-override: 30.05%;line-gap-override: 0.00%;size-adjust: 102.51%
+}.__className_e6c52c {font-family: '__Chakra_Petch_e6c52c', '__Chakra_Petch_Fallback_e6c52c';font-style: normal
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./node_modules/react-toastify/dist/ReactToastify.min.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************/
+:root{--toastify-color-light:#fff;--toastify-color-dark:#121212;--toastify-color-info:#3498db;--toastify-color-success:#07bc0c;--toastify-color-warning:#f1c40f;--toastify-color-error:#e74c3c;--toastify-color-transparent:hsla(0,0%,100%,.7);--toastify-icon-color-info:var(--toastify-color-info);--toastify-icon-color-success:var(--toastify-color-success);--toastify-icon-color-warning:var(--toastify-color-warning);--toastify-icon-color-error:var(--toastify-color-error);--toastify-toast-width:320px;--toastify-toast-offset:16px;--toastify-toast-top:max(var(--toastify-toast-offset),env(safe-area-inset-top));--toastify-toast-right:max(var(--toastify-toast-offset),env(safe-area-inset-right));--toastify-toast-left:max(var(--toastify-toast-offset),env(safe-area-inset-left));--toastify-toast-bottom:max(var(--toastify-toast-offset),env(safe-area-inset-bottom));--toastify-toast-background:#fff;--toastify-toast-min-height:64px;--toastify-toast-max-height:800px;--toastify-toast-bd-radius:6px;--toastify-font-family:sans-serif;--toastify-z-index:9999;--toastify-text-color-light:#757575;--toastify-text-color-dark:#fff;--toastify-text-color-info:#fff;--toastify-text-color-success:#fff;--toastify-text-color-warning:#fff;--toastify-text-color-error:#fff;--toastify-spinner-color:#616161;--toastify-spinner-color-empty-area:#e0e0e0;--toastify-color-progress-light:linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55);--toastify-color-progress-dark:#bb86fc;--toastify-color-progress-info:var(--toastify-color-info);--toastify-color-progress-success:var(--toastify-color-success);--toastify-color-progress-warning:var(--toastify-color-warning);--toastify-color-progress-error:var(--toastify-color-error);--toastify-color-progress-bgo:0.2}.Toastify__toast-container{z-index:var(--toastify-z-index);-webkit-transform:translateZ(var(--toastify-z-index));position:fixed;padding:4px;width:var(--toastify-toast-width);box-sizing:border-box;color:#fff}.Toastify__toast-container--top-left{top:var(--toastify-toast-top);left:var(--toastify-toast-left)}.Toastify__toast-container--top-center{top:var(--toastify-toast-top);left:50%;transform:translateX(-50%)}.Toastify__toast-container--top-right{top:var(--toastify-toast-top);right:var(--toastify-toast-right)}.Toastify__toast-container--bottom-left{bottom:var(--toastify-toast-bottom);left:var(--toastify-toast-left)}.Toastify__toast-container--bottom-center{bottom:var(--toastify-toast-bottom);left:50%;transform:translateX(-50%)}.Toastify__toast-container--bottom-right{bottom:var(--toastify-toast-bottom);right:var(--toastify-toast-right)}@media only screen and (max-width:480px){.Toastify__toast-container{width:100vw;padding:0;left:env(safe-area-inset-left);margin:0}.Toastify__toast-container--top-center,.Toastify__toast-container--top-left,.Toastify__toast-container--top-right{top:env(safe-area-inset-top);transform:translateX(0)}.Toastify__toast-container--bottom-center,.Toastify__toast-container--bottom-left,.Toastify__toast-container--bottom-right{bottom:env(safe-area-inset-bottom);transform:translateX(0)}.Toastify__toast-container--rtl{right:env(safe-area-inset-right);left:auto}}.Toastify__toast{--y:0;position:relative;touch-action:none;min-height:var(--toastify-toast-min-height);box-sizing:border-box;margin-bottom:1rem;padding:8px;border-radius:var(--toastify-toast-bd-radius);box-shadow:0 4px 12px rgba(0,0,0,.1);display:flex;justify-content:space-between;max-height:var(--toastify-toast-max-height);font-family:var(--toastify-font-family);cursor:default;direction:ltr;z-index:0;overflow:hidden}.Toastify__toast--stacked{position:absolute;width:100%;transform:translate3d(0,var(--y),0) scale(var(--s));transition:transform .3s}.Toastify__toast--stacked[data-collapsed] .Toastify__close-button,.Toastify__toast--stacked[data-collapsed] .Toastify__toast-body{transition:opacity .1s}.Toastify__toast--stacked[data-collapsed=false]{overflow:visible}.Toastify__toast--stacked[data-collapsed=true]:not(:last-child)>*{opacity:0}.Toastify__toast--stacked:after{content:"";position:absolute;left:0;right:0;height:calc(var(--g) * 1px);bottom:100%}.Toastify__toast--stacked[data-pos=top]{top:0}.Toastify__toast--stacked[data-pos=bot]{bottom:0}.Toastify__toast--stacked[data-pos=bot].Toastify__toast--stacked:before{transform-origin:top}.Toastify__toast--stacked[data-pos=top].Toastify__toast--stacked:before{transform-origin:bottom}.Toastify__toast--stacked:before{content:"";position:absolute;left:0;right:0;bottom:0;height:100%;transform:scaleY(3);z-index:-1}.Toastify__toast--rtl{direction:rtl}.Toastify__toast--close-on-click{cursor:pointer}.Toastify__toast-body{margin:auto 0;flex:1 1 auto;padding:6px;display:flex;align-items:center}.Toastify__toast-body>div:last-child{word-break:break-word;flex:1 1}.Toastify__toast-icon{-webkit-margin-end:10px;margin-inline-end:10px;width:20px;flex-shrink:0;display:flex}.Toastify--animate{animation-fill-mode:both;animation-duration:.5s}.Toastify--animate-icon{animation-fill-mode:both;animation-duration:.3s}@media only screen and (max-width:480px){.Toastify__toast{margin-bottom:0;border-radius:0}}.Toastify__toast-theme--dark{background:var(--toastify-color-dark);color:var(--toastify-text-color-dark)}.Toastify__toast-theme--colored.Toastify__toast--default,.Toastify__toast-theme--light{background:var(--toastify-color-light);color:var(--toastify-text-color-light)}.Toastify__toast-theme--colored.Toastify__toast--info{color:var(--toastify-text-color-info);background:var(--toastify-color-info)}.Toastify__toast-theme--colored.Toastify__toast--success{color:var(--toastify-text-color-success);background:var(--toastify-color-success)}.Toastify__toast-theme--colored.Toastify__toast--warning{color:var(--toastify-text-color-warning);background:var(--toastify-color-warning)}.Toastify__toast-theme--colored.Toastify__toast--error{color:var(--toastify-text-color-error);background:var(--toastify-color-error)}.Toastify__progress-bar-theme--light{background:var(--toastify-color-progress-light)}.Toastify__progress-bar-theme--dark{background:var(--toastify-color-progress-dark)}.Toastify__progress-bar--info{background:var(--toastify-color-progress-info)}.Toastify__progress-bar--success{background:var(--toastify-color-progress-success)}.Toastify__progress-bar--warning{background:var(--toastify-color-progress-warning)}.Toastify__progress-bar--error{background:var(--toastify-color-progress-error)}.Toastify__progress-bar-theme--colored.Toastify__progress-bar--error,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--info,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--success,.Toastify__progress-bar-theme--colored.Toastify__progress-bar--warning{background:var(--toastify-color-transparent)}.Toastify__close-button{color:#fff;background:transparent;outline:none;border:none;padding:0;cursor:pointer;opacity:.7;transition:.3s ease;align-self:flex-start;z-index:1}.Toastify__close-button--light{color:#000;opacity:.3}.Toastify__close-button>svg{fill:currentColor;height:16px;width:14px}.Toastify__close-button:focus,.Toastify__close-button:hover{opacity:1}@keyframes Toastify__trackProgress{0%{transform:scaleX(1)}to{transform:scaleX(0)}}.Toastify__progress-bar{position:absolute;bottom:0;left:0;width:100%;height:100%;z-index:var(--toastify-z-index);opacity:.7;transform-origin:left;border-bottom-left-radius:var(--toastify-toast-bd-radius)}.Toastify__progress-bar--animated{animation:Toastify__trackProgress linear 1 forwards}.Toastify__progress-bar--controlled{transition:transform .2s}.Toastify__progress-bar--rtl{right:0;left:auto;transform-origin:right;border-bottom-left-radius:0;border-bottom-right-radius:var(--toastify-toast-bd-radius)}.Toastify__progress-bar--wrp{position:absolute;bottom:0;left:0;width:100%;height:5px;border-bottom-left-radius:var(--toastify-toast-bd-radius)}.Toastify__progress-bar--wrp[data-hidden=true]{opacity:0}.Toastify__progress-bar--bg{opacity:var(--toastify-color-progress-bgo);width:100%;height:100%}.Toastify__spinner{width:20px;height:20px;box-sizing:border-box;border:2px solid;border-radius:100%;border-color:var(--toastify-spinner-color-empty-area);border-right-color:var(--toastify-spinner-color);animation:Toastify__spin .65s linear infinite}@keyframes Toastify__bounceInRight{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(3000px,0,0)}60%{opacity:1;transform:translate3d(-25px,0,0)}75%{transform:translate3d(10px,0,0)}90%{transform:translate3d(-5px,0,0)}to{transform:none}}@keyframes Toastify__bounceOutRight{20%{opacity:1;transform:translate3d(-20px,var(--y),0)}to{opacity:0;transform:translate3d(2000px,var(--y),0)}}@keyframes Toastify__bounceInLeft{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(-3000px,0,0)}60%{opacity:1;transform:translate3d(25px,0,0)}75%{transform:translate3d(-10px,0,0)}90%{transform:translate3d(5px,0,0)}to{transform:none}}@keyframes Toastify__bounceOutLeft{20%{opacity:1;transform:translate3d(20px,var(--y),0)}to{opacity:0;transform:translate3d(-2000px,var(--y),0)}}@keyframes Toastify__bounceInUp{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(0,3000px,0)}60%{opacity:1;transform:translate3d(0,-20px,0)}75%{transform:translate3d(0,10px,0)}90%{transform:translate3d(0,-5px,0)}to{transform:translateZ(0)}}@keyframes Toastify__bounceOutUp{20%{transform:translate3d(0,calc(var(--y) - 10px),0)}40%,45%{opacity:1;transform:translate3d(0,calc(var(--y) + 20px),0)}to{opacity:0;transform:translate3d(0,-2000px,0)}}@keyframes Toastify__bounceInDown{0%,60%,75%,90%,to{animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;transform:translate3d(0,-3000px,0)}60%{opacity:1;transform:translate3d(0,25px,0)}75%{transform:translate3d(0,-10px,0)}90%{transform:translate3d(0,5px,0)}to{transform:none}}@keyframes Toastify__bounceOutDown{20%{transform:translate3d(0,calc(var(--y) - 10px),0)}40%,45%{opacity:1;transform:translate3d(0,calc(var(--y) + 20px),0)}to{opacity:0;transform:translate3d(0,2000px,0)}}.Toastify__bounce-enter--bottom-left,.Toastify__bounce-enter--top-left{animation-name:Toastify__bounceInLeft}.Toastify__bounce-enter--bottom-right,.Toastify__bounce-enter--top-right{animation-name:Toastify__bounceInRight}.Toastify__bounce-enter--top-center{animation-name:Toastify__bounceInDown}.Toastify__bounce-enter--bottom-center{animation-name:Toastify__bounceInUp}.Toastify__bounce-exit--bottom-left,.Toastify__bounce-exit--top-left{animation-name:Toastify__bounceOutLeft}.Toastify__bounce-exit--bottom-right,.Toastify__bounce-exit--top-right{animation-name:Toastify__bounceOutRight}.Toastify__bounce-exit--top-center{animation-name:Toastify__bounceOutUp}.Toastify__bounce-exit--bottom-center{animation-name:Toastify__bounceOutDown}@keyframes Toastify__zoomIn{0%{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes Toastify__zoomOut{0%{opacity:1}50%{opacity:0;transform:translate3d(0,var(--y),0) scale3d(.3,.3,.3)}to{opacity:0}}.Toastify__zoom-enter{animation-name:Toastify__zoomIn}.Toastify__zoom-exit{animation-name:Toastify__zoomOut}@keyframes Toastify__flipIn{0%{transform:perspective(400px) rotateX(90deg);animation-timing-function:ease-in;opacity:0}40%{transform:perspective(400px) rotateX(-20deg);animation-timing-function:ease-in}60%{transform:perspective(400px) rotateX(10deg);opacity:1}80%{transform:perspective(400px) rotateX(-5deg)}to{transform:perspective(400px)}}@keyframes Toastify__flipOut{0%{transform:translate3d(0,var(--y),0) perspective(400px)}30%{transform:translate3d(0,var(--y),0) perspective(400px) rotateX(-20deg);opacity:1}to{transform:translate3d(0,var(--y),0) perspective(400px) rotateX(90deg);opacity:0}}.Toastify__flip-enter{animation-name:Toastify__flipIn}.Toastify__flip-exit{animation-name:Toastify__flipOut}@keyframes Toastify__slideInRight{0%{transform:translate3d(110%,0,0);visibility:visible}to{transform:translate3d(0,var(--y),0)}}@keyframes Toastify__slideInLeft{0%{transform:translate3d(-110%,0,0);visibility:visible}to{transform:translate3d(0,var(--y),0)}}@keyframes Toastify__slideInUp{0%{transform:translate3d(0,110%,0);visibility:visible}to{transform:translate3d(0,var(--y),0)}}@keyframes Toastify__slideInDown{0%{transform:translate3d(0,-110%,0);visibility:visible}to{transform:translate3d(0,var(--y),0)}}@keyframes Toastify__slideOutRight{0%{transform:translate3d(0,var(--y),0)}to{visibility:hidden;transform:translate3d(110%,var(--y),0)}}@keyframes Toastify__slideOutLeft{0%{transform:translate3d(0,var(--y),0)}to{visibility:hidden;transform:translate3d(-110%,var(--y),0)}}@keyframes Toastify__slideOutDown{0%{transform:translate3d(0,var(--y),0)}to{visibility:hidden;transform:translate3d(0,500px,0)}}@keyframes Toastify__slideOutUp{0%{transform:translate3d(0,var(--y),0)}to{visibility:hidden;transform:translate3d(0,-500px,0)}}.Toastify__slide-enter--bottom-left,.Toastify__slide-enter--top-left{animation-name:Toastify__slideInLeft}.Toastify__slide-enter--bottom-right,.Toastify__slide-enter--top-right{animation-name:Toastify__slideInRight}.Toastify__slide-enter--top-center{animation-name:Toastify__slideInDown}.Toastify__slide-enter--bottom-center{animation-name:Toastify__slideInUp}.Toastify__slide-exit--bottom-left,.Toastify__slide-exit--top-left{animation-name:Toastify__slideOutLeft;animation-timing-function:ease-in;animation-duration:.3s}.Toastify__slide-exit--bottom-right,.Toastify__slide-exit--top-right{animation-name:Toastify__slideOutRight;animation-timing-function:ease-in;animation-duration:.3s}.Toastify__slide-exit--top-center{animation-name:Toastify__slideOutUp;animation-timing-function:ease-in;animation-duration:.3s}.Toastify__slide-exit--bottom-center{animation-name:Toastify__slideOutDown;animation-timing-function:ease-in;animation-duration:.3s}@keyframes Toastify__spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./src/shared/styles/main.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: #1c1c1c;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+.video {
+  max-width: 100dvw;
+  max-height: 100dvh;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #111111;
+}
+.video #stream {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #111111;
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  object-fit: contain;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/shared/ui/Typography/Typography.module.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Typography_text___GGzx.Typography_primary__gSou_ {
+  color: #a9d800;
+}
+.Typography_text___GGzx.Typography_secondary__Z26hV {
+  color: #bbbbbb;
+}
+.Typography_text___GGzx.Typography_gray___BwR_ {
+  color: #8d8d8d;
+}
+.Typography_text___GGzx.Typography_white__79Sh4 {
+  color: #fff;
+}
+.Typography_text___GGzx.Typography_light__gdRyg {
+  color: #e8e8e8;
+}
+.Typography_text___GGzx.Typography_warning__RgaIS {
+  color: #ffc048;
+}
+.Typography_text___GGzx.Typography_m__pb3WP {
+  font-size: 14px;
+  line-height: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .Typography_text___GGzx.Typography_m__pb3WP {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.Typography_text___GGzx.Typography_xl__TgmrU {
+  font-size: 24px;
+  line-height: 28px;
+}
+@media only screen and (min-width: 768px) {
+  .Typography_text___GGzx.Typography_xl__TgmrU {
+    font-size: 32px;
+    line-height: 34px;
+  }
+}
+@media only screen and (min-width: 1160px) {
+  .Typography_text___GGzx.Typography_xl__TgmrU {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+.Typography_text___GGzx.Typography_four__o5wz0 {
+  font-weight: 400;
+}
+.Typography_text___GGzx.Typography_five__upnmW {
+  font-weight: 500;
+}
+.Typography_text___GGzx.Typography_six__SANCA {
+  font-weight: 600;
+}
+.Typography_text___GGzx.Typography_seven__Ow8d_ {
+  font-weight: 700;
+}
+.Typography_text___GGzx.Typography_eight__WbAJ7 {
+  font-weight: 700;
+}
+.Typography_text___GGzx.Typography_nine__UxmVT {
+  font-weight: 800;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/shared/ui/Button/Button.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Button_btn__VsKUN {
+  width: max-content;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  transition: all 0.6s ease;
+}
+.Button_btn__VsKUN.Button_disabled__pfHmQ, .Button_btn__VsKUN.Button_disabled__pfHmQ:hover, .Button_btn__VsKUN.Button_disabled__pfHmQ:active {
+  border: 1px solid #606060 !important;
+  color: #606060 !important;
+  background-color: transparent !important;
+}
+.Button_btn__VsKUN.Button_disabled__pfHmQ svg path, .Button_btn__VsKUN.Button_disabled__pfHmQ:hover svg path, .Button_btn__VsKUN.Button_disabled__pfHmQ:active svg path {
+  fill: #606060 !important;
+}
+
+.Button_outlined__JFj4e {
+  border: 1px solid;
+  background-color: transparent;
+  min-width: 122px;
+}
+.Button_outlined__JFj4e svg {
+  width: 16px;
+  height: 16px;
+}
+.Button_outlined__JFj4e.Button_primary__G1mpW {
+  border-color: #a9d800;
+  color: #a9d800;
+}
+.Button_outlined__JFj4e.Button_primary__G1mpW:hover {
+  color: #fff;
+  border-color: #bbbbbb;
+  background-color: #a9d800;
+}
+.Button_outlined__JFj4e.Button_cancel__Els99 {
+  border-color: #e02b1d;
+  color: #e02b1d;
+}
+.Button_outlined__JFj4e.Button_cancel__Els99:hover {
+  color: #fff;
+  border-color: #bbbbbb;
+  background-color: #e02b1d;
+}
+.Button_outlined__JFj4e.Button_white__Olw03 {
+  color: #fff;
+  border-color: #bbbbbb;
+}
+.Button_outlined__JFj4e.Button_white__Olw03:hover {
+  border-color: #a9d800;
+  color: #a9d800;
+}
+.Button_outlined__JFj4e.Button_white__Olw03:hover svg path {
+  fill: #a9d800;
+}
+.Button_outlined__JFj4e.Button_white__Olw03:active {
+  color: #1c1c1c;
+  background-color: #a9d800;
+}
+.Button_outlined__JFj4e.Button_white__Olw03:active svg path {
+  fill: #1c1c1c;
+}
+
+.Button_clear__iFLCQ {
+  background-color: transparent;
+}
+.Button_clear__iFLCQ:hover {
+  filter: brightness(80%);
+}
+.Button_clear__iFLCQ.Button_disabled__pfHmQ {
+  pointer-events: none;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/shared/ui/BurgerMenu/ui/BurgerMenu.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.BurgerMenu_menu__icon__2QGzx {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+.BurgerMenu_menu__content__j6m10 {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: #18191a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+  transition: all 1.2s ease;
+}
+.BurgerMenu_menu__content__j6m10.BurgerMenu_isVisible__xjjJj {
+  height: calc(100dvh - 60px);
+}
+@media only screen and (min-width: 768px) {
+  .BurgerMenu_menu__content__j6m10.BurgerMenu_isVisible__xjjJj {
+    height: calc(100dvh - 80px);
+  }
+}
+.BurgerMenu_menu__nav__S2uwB {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #18191a;
+}
+.BurgerMenu_menu__nav--item__btj_P {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+.BurgerMenu_menu__nav--item__icon__qvw3b {
+  height: 48px;
+  width: 48px;
+  padding: 12px;
+  background-color: #323232;
+  border-radius: 10px;
+}
+.BurgerMenu_menu__nav--item__btj_P svg {
+  width: 24px;
+  height: 24px;
+}
+.BurgerMenu_menu__nav--item__btj_P svg path {
+  fill: #fff;
+}
+.BurgerMenu_menu__nav--item__btj_P:hover .BurgerMenu_menu__nav--item__label__sPsbO, .BurgerMenu_menu__nav--item__btj_P.BurgerMenu_isActive__acepi .BurgerMenu_menu__nav--item__label__sPsbO {
+  color: #a9d800;
+}
+.BurgerMenu_menu__nav--item__btj_P:hover svg path, .BurgerMenu_menu__nav--item__btj_P.BurgerMenu_isActive__acepi svg path {
+  fill: #a9d800;
+}
+.BurgerMenu_menu__nav--item__btj_P.BurgerMenu_isStroke__ySG_T svg path {
+  fill: none;
+  stroke: #fff;
+}
+.BurgerMenu_menu__nav--item__btj_P.BurgerMenu_isStroke__ySG_T:hover svg path, .BurgerMenu_menu__nav--item__btj_P.BurgerMenu_isStroke__ySG_T.BurgerMenu_isActive__acepi svg path {
+  stroke: #a9d800;
+}
+.BurgerMenu_menu__profile__Aw6Jk {
+  border-top: 1px solid #323232;
+  position: relative;
+  padding: 20px;
+}
+.BurgerMenu_menu__profile__shadow__KpGm5 {
+  position: absolute;
+  right: 0;
+  top: -60px;
+}
+.BurgerMenu_menu__profile__login__zyPlw {
+  color: #8d8d8d;
+  transition: all 1.2s ease;
+}
+.BurgerMenu_menu__profile__login__zyPlw svg path {
+  transition: all 1.2s ease;
+  stroke: #8d8d8d;
+}
+.BurgerMenu_menu__profile__login__zyPlw:hover {
+  color: #a9d800;
+}
+.BurgerMenu_menu__profile__login__zyPlw:hover svg path {
+  stroke: #a9d800;
+}
+.BurgerMenu_menu__profile-login__8EzZ_ {
+  display: flex;
+  padding: 0;
+  gap: 8px;
+  align-items: center;
+  z-index: 4;
+  position: relative;
+}
+.BurgerMenu_menu__profile-login__8EzZ_ .BurgerMenu_text__zEsQf {
+  opacity: 1;
+  transition: opacity 3s ease;
+}
+.BurgerMenu_menu__profile-login__8EzZ_:hover .BurgerMenu_text__zEsQf {
+  color: #a9d800;
+}
+.BurgerMenu_menu__profile-login__8EzZ_:hover path {
+  stroke: #a9d800;
+}
+.BurgerMenu_menu__profile--info__96I13 {
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
+}
+.BurgerMenu_menu__profile--info__block__lx58s {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.BurgerMenu_menu__profile--info__name__yPdBY {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.BurgerMenu_menu__profile--info__progress__AJZjG {
+  width: 104px;
+  width: 100%;
+  height: 2px;
+  background-color: #323232;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.BurgerMenu_menu__profile--info__progress__AJZjG::-webkit-progress-bar {
+  background-color: #323232;
+  border-radius: 9px;
+}
+.BurgerMenu_menu__profile--info__progress__AJZjG::-webkit-progress-value {
+  height: 100%;
+  background: #a9d800;
+}
+.BurgerMenu_menu__profile--info__size__piBEm {
+  font-size: 12px;
+  line-height: 16px;
+}
+.BurgerMenu_menu__profile--info__avatar__kjMaT {
+  border-radius: 50%;
+  z-index: 9;
+}
+.BurgerMenu_menu__logout__Ax_B2 {
+  position: absolute;
+  bottom: 140px;
+}
+@media only screen and (min-width: 768px) {
+  .BurgerMenu_menu__content__j6m10 {
+    top: 80px;
+    max-width: 375px;
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/shared/ui/Card/ui/Card.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Card_card__gyLkh {
+  background: #18191a;
+  border: 1px solid #323232;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/shared/ui/Input/Input.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Input_container__PiKog {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.Input_container__PiKog .Input_label__5xQux {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Input_container__PiKog .Input_label__5xQux .Input_edit___F9m0 {
+  padding: 0;
+  color: #a9d800;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV {
+  position: relative;
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV .Input_input__dwy5x {
+  width: 100%;
+  border-radius: 4px;
+  padding: 16px 20px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  border: 1px solid #323232;
+  background-color: #1c1c1c;
+  color: #fff;
+  height: 100%;
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV .Input_input__dwy5x.Input_withIcon__gZBRS {
+  padding: 16px 20px 16px 45px;
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV .Input_input__dwy5x::placeholder {
+  color: #606060;
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV .Input_input__dwy5x:focus {
+  border: 1px solid #a9d800;
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV .Input_input__dwy5x.Input_withAdornments__5PRps {
+  padding: 16px 20px 16px 30px;
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV .Input_icon__csLNg {
+  position: absolute;
+  padding: 0px;
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV .Input_icon__csLNg.Input_end__z9X2s {
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Input_container__PiKog .Input_inputContainer__9nDxV .Input_icon__csLNg.Input_start__bKieR {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Input_container__PiKog .Input_error__C_XB0 {
+  position: absolute;
+  top: 102%;
+}
+.Input_container__PiKog.Input_incorrect__veFPa .Input_input__dwy5x {
+  color: #e02b1d;
+}
+.Input_container__PiKog.Input_incorrect__veFPa .Input_input__dwy5x:focus {
+  border-color: #e02b1d;
+}
+.Input_container__PiKog.Input_incorrect__veFPa .Input_error__C_XB0 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #e02b1d;
+}
+.Input_container__PiKog.Input_disabled__CN0td {
+  pointer-events: none;
+  opacity: 0.3;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/shared/ui/Modal/ui/Modal.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Modal_Modal__AT5Ob {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.Modal_overlay__xTIZY {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s all ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(36, 41, 48, 0.6);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.Modal_content__bv_6Z {
+  width: 100%;
+  max-width: 530px;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: 0.3s all ease;
+  background: #111111 url("/assets/img/modal_bg.webp") no-repeat center center/cover;
+  padding: 32px 20px;
+  position: relative;
+  cursor: default;
+}
+.Modal_content__bv_6Z .Modal_cross__gbW72 {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 9;
+  cursor: pointer;
+}
+.Modal_content__bv_6Z .Modal_cross__gbW72 svg {
+  width: 16px;
+  height: 16px;
+}
+.Modal_content__bv_6Z .Modal_cross__gbW72 svg path {
+  fill: #8d8d8d;
+}
+.Modal_content__bv_6Z .Modal_cross__gbW72:hover {
+  filter: brightness(80%);
+}
+@media only screen and (min-width: 768px) {
+  .Modal_content__bv_6Z {
+    padding: 36px 80px;
+  }
+  .Modal_content__bv_6Z .Modal_cross__gbW72 svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.Modal_isOpen__bGudY {
+  pointer-events: auto;
+  opacity: 1;
+  z-index: 1000;
+}
+
+.Modal_isOpening__nY3_Z .Modal_content__bv_6Z {
+  animation: Modal_animate-in__Gusb6 0.3s forwards;
+}
+
+@keyframes Modal_animate-in__Gusb6 {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.Modal_isClosing__pZGzu .Modal_content__bv_6Z {
+  transform: scale(0);
+  opacity: 0;
+}
+.Modal_isClosing__pZGzu .Modal_overlay__xTIZY {
+  background: rgba(36, 41, 48, 0.6);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/shared/ui/PrimaryButton/PrimaryButton.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.PrimaryButton_btn__CcDtq {
+  width: max-content;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  transform-origin: 50% 100% 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.PrimaryButton_fill__SEZMa {
+  background-color: #a9d800;
+  padding: 18px 0 16px;
+}
+.PrimaryButton_fill__SEZMa.PrimaryButton_disabled__pzPzt {
+  cursor: not-allowed;
+  background-color: #8d8d8d;
+}
+.PrimaryButton_fill__SEZMa.PrimaryButton_disabled__pzPzt::before, .PrimaryButton_fill__SEZMa.PrimaryButton_disabled__pzPzt::after,
+.PrimaryButton_fill__SEZMa.PrimaryButton_disabled__pzPzt .PrimaryButton_corner__peHu2 {
+  background-color: #8d8d8d;
+}
+.PrimaryButton_fill__SEZMa.PrimaryButton_disabled__pzPzt:hover {
+  background-color: #8d8d8d;
+}
+.PrimaryButton_fill__SEZMa.PrimaryButton_disabled__pzPzt:hover::before, .PrimaryButton_fill__SEZMa.PrimaryButton_disabled__pzPzt:hover::after,
+.PrimaryButton_fill__SEZMa.PrimaryButton_disabled__pzPzt:hover .PrimaryButton_corner__peHu2 {
+  background-color: #8d8d8d;
+}
+.PrimaryButton_fill__SEZMa:hover {
+  background-color: #dbf056;
+}
+.PrimaryButton_fill__SEZMa:hover::before, .PrimaryButton_fill__SEZMa:hover::after,
+.PrimaryButton_fill__SEZMa:hover .PrimaryButton_corner__peHu2 {
+  background-color: #dbf056;
+}
+.PrimaryButton_fill__SEZMa:active {
+  background-color: #658100;
+}
+.PrimaryButton_fill__SEZMa:active::before, .PrimaryButton_fill__SEZMa:active::after,
+.PrimaryButton_fill__SEZMa:active .PrimaryButton_corner__peHu2 {
+  background-color: #658100;
+}
+.PrimaryButton_fill__SEZMa::before, .PrimaryButton_fill__SEZMa::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 43px;
+  background-color: #a9d800;
+}
+.PrimaryButton_fill__SEZMa::before {
+  left: -15px;
+  bottom: 0;
+}
+.PrimaryButton_fill__SEZMa::after {
+  right: -15px;
+  top: 0;
+}
+.PrimaryButton_fill__SEZMa .PrimaryButton_corner__peHu2 {
+  position: absolute;
+  width: 25px;
+  height: 21px;
+  transform: rotate(45deg);
+  background-color: #a9d800;
+  z-index: 0;
+}
+.PrimaryButton_fill__SEZMa .PrimaryButton_corner__peHu2.PrimaryButton_left__JjLA4 {
+  top: 6px;
+  left: -11px;
+}
+.PrimaryButton_fill__SEZMa .PrimaryButton_corner__peHu2.PrimaryButton_right__1g9V_ {
+  bottom: 6px;
+  right: -11px;
+}
+
+.PrimaryButton_primary__o8nTM {
+  color: #e5f3b3;
+  min-width: 294px;
+  padding: 12px 0;
+  background-color: transparent;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, #323232, #a9d800) !important;
+  border-image-slice: 1 !important;
+  border-left: none;
+  border-right: none;
+}
+.PrimaryButton_primary__o8nTM svg {
+  height: 16px;
+  width: 16px;
+}
+.PrimaryButton_primary__o8nTM svg path {
+  fill: #e5f3b3;
+}
+.PrimaryButton_primary__o8nTM::before, .PrimaryButton_primary__o8nTM::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 33px;
+}
+.PrimaryButton_primary__o8nTM::before {
+  left: -15px;
+  bottom: -1px;
+  border-left: 1px solid #323232;
+  border-bottom: 1px solid #323232;
+}
+.PrimaryButton_primary__o8nTM::after {
+  right: -15px;
+  top: -1px;
+  border-top: 1px solid #a9d800;
+  border-right: 1px solid #a9d800;
+}
+.PrimaryButton_primary__o8nTM .PrimaryButton_corner__peHu2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transform: 50% 50% 0;
+  transform: rotate(45deg);
+}
+.PrimaryButton_primary__o8nTM .PrimaryButton_corner__peHu2.PrimaryButton_left__JjLA4 {
+  top: 3px;
+  left: -11px;
+  border-left: 1px solid #323232;
+}
+.PrimaryButton_primary__o8nTM .PrimaryButton_corner__peHu2.PrimaryButton_right__1g9V_ {
+  bottom: 3px;
+  right: -11px;
+  border-right: 1px solid #a9d800;
+}
+.PrimaryButton_primary__o8nTM:hover {
+  border-image: linear-gradient(to left, #323232, #a9d800) !important;
+  border-image-slice: 1 !important;
+  color: #a9d800;
+}
+.PrimaryButton_primary__o8nTM:hover svg path {
+  fill: #a9d800;
+}
+.PrimaryButton_primary__o8nTM:hover::before {
+  border-left: 1px solid #a9d800;
+  border-bottom: 1px solid #a9d800;
+}
+.PrimaryButton_primary__o8nTM:hover::after {
+  border-top: 1px solid #323232;
+  border-right: 1px solid #323232;
+}
+.PrimaryButton_primary__o8nTM:hover .PrimaryButton_corner__peHu2.PrimaryButton_left__JjLA4 {
+  border-left: 1px solid #a9d800;
+}
+.PrimaryButton_primary__o8nTM:hover .PrimaryButton_corner__peHu2.PrimaryButton_right__1g9V_ {
+  border-right: 1px solid #323232;
+}
+.PrimaryButton_primary__o8nTM:active {
+  background-color: #a9d800;
+  color: #1c1c1c;
+}
+.PrimaryButton_primary__o8nTM:active svg path {
+  fill: #1c1c1c;
+}
+.PrimaryButton_primary__o8nTM:active::before, .PrimaryButton_primary__o8nTM:active::after,
+.PrimaryButton_primary__o8nTM:active .PrimaryButton_corner__peHu2 {
+  background-color: #a9d800;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/shared/ui/Notification/ui/Notification.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Notification_notification__BdlKx {
+  display: none;
+}
+.Notification_notification__BdlKx.Notification_isActive__fL1hL {
+  display: block;
+  position: fixed;
+  right: 20px;
+  top: 44px;
+  z-index: 9;
+  background-color: rgba(24, 25, 26, 0.7);
+  max-width: 310px;
+}
+.Notification_notification__content__6a8i6 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+.Notification_notification__close___q_ab {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  padding: 6px;
+}
+.Notification_notification__close___q_ab:hover {
+  filter: brightness(80%);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/widgets/Footer/ui/Footer.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__EJ3yK {
+  width: 100%;
+  border-top: 1px solid #323232;
+  background-color: #18191a;
+  text-align: center;
+  padding: 12px;
+  color: #bbbbbb;
+}
+.Footer_footer__text__Yiign {
+  font-size: 12px;
+  line-height: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .Footer_footer__EJ3yK {
+    padding: 20px 0 18px;
+  }
+  .Footer_footer__text__Yiign {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 1160px) {
+  .Footer_footer__EJ3yK {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    transition: all 1.2s ease;
+  }
+  .Footer_footer__EJ3yK.Footer_isOpen__Nu16i {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/features/MobileSearch/ui/MobileSearch.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.MobileSearch_search__MvmE7 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.MobileSearch_search__icon__XfBA6 {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 9;
+}
+.MobileSearch_search__input__FIbiX {
+  height: 44px;
+}
+@media only screen and (min-width: 768px) {
+  .MobileSearch_search__MvmE7 {
+    display: none;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/widgets/Header/ui/Header.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Header_navBar__zIs_H {
+  border-bottom: 1px solid #323232;
+  padding: 10px 15px;
+  position: fixed;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  z-index: 2;
+  background-color: #1c1c1c;
+  width: 100%;
+}
+.Header_navBar__zIs_H .Header_tabletSearch__KT6TJ {
+  padding: 0 15px;
+}
+.Header_navBar__zIs_H .Header_tabletSearch__KT6TJ {
+  display: none;
+}
+.Header_navBar__zIs_H .Header_shadow__08lqW {
+  position: absolute;
+  left: 0;
+  top: -15px;
+}
+.Header_navBar__result__07tnX {
+  position: absolute;
+  z-index: 9;
+  top: 90px;
+  width: calc(100% - 20px);
+  background-color: #1c1c1c;
+  display: none;
+  padding-bottom: 16px;
+}
+.Header_navBar__result__07tnX.Header_isVisible__jkJQM {
+  display: block;
+}
+.Header_navBar__result--list__6518r {
+  border: 1px solid #323232;
+  padding: 16px 24px;
+  margin: 0 75px 0 15px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 150px;
+  overflow: auto;
+}
+.Header_navBar__result--list__6518r::-webkit-scrollbar {
+  width: 2px;
+}
+.Header_navBar__result--list__6518r::-webkit-scrollbar-thumb {
+  background-color: #bbbbbb;
+  border-radius: 8px;
+}
+.Header_navBar__result--list__item__bn_d_ {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.Header_navBar__result--list__image__ReSqo {
+  object-fit: contain;
+}
+@media only screen and (min-width: 768px) {
+  .Header_navBar__zIs_H {
+    height: 80px;
+  }
+  .Header_navBar__zIs_H .Header_tabletSearch__KT6TJ {
+    display: flex;
+    width: 100%;
+    height: 48px;
+  }
+  .Header_navBar__zIs_H .Header_shadow__08lqW {
+    width: 95px;
+    height: 95px;
+  }
+  .Header_navBar__zIs_H .Header_logo__G6aUi {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media only screen and (min-width: 1160px) {
+  .Header_navBar__zIs_H {
+    border-bottom: none;
+    height: 90px;
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    transition: all 1.2s ease;
+    padding: 0 40px;
+  }
+  .Header_navBar__zIs_H.Header_isOpen__5lyJD {
+    margin-left: 180px;
+    width: calc(100% - 180px);
+  }
+  .Header_navBar__zIs_H .Header_logo__G6aUi,
+  .Header_navBar__zIs_H .Header_burger__yE8nk,
+  .Header_navBar__zIs_H .Header_shadow__08lqW {
+    display: none;
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/features/LoginModal/ui/LoginModal.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.LoginModal_modal__SjkDN {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.LoginModal_modal__title__d0cLT {
+  margin-top: 4px;
+  font-size: 32px;
+  line-height: 34px;
+}
+@media only screen and (min-width: 768px) {
+  .LoginModal_modal__title__d0cLT {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+.LoginModal_modal__text__2rVEP {
+  margin-bottom: 16px;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/widgets/NavBar/ui/NavBar.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.NavBar_nav__c4VnL {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 100vh;
+  border-right: 1px solid #323232;
+  position: fixed;
+  z-index: 3;
+  padding: 32px 0 0 0;
+  transition: width 1s ease;
+}
+.NavBar_nav__c4VnL .NavBar_icon__AwzBh {
+  position: absolute;
+  top: 46px;
+  cursor: pointer;
+  z-index: 3;
+}
+.NavBar_nav__c4VnL .NavBar_icon__AwzBh.NavBar_hide__lO0rp {
+  right: 16px;
+}
+.NavBar_nav__c4VnL .NavBar_icon__AwzBh.NavBar_open__YHqzT {
+  right: 0;
+  transform: translateX(50%);
+  display: none;
+}
+.NavBar_nav__c4VnL .NavBar_icon__AwzBh:hover {
+  filter: brightness(80%);
+}
+.NavBar_nav__c4VnL.NavBar_close__JvI_L {
+  width: 80px;
+}
+.NavBar_nav__c4VnL.NavBar_close__JvI_L .NavBar_icon__AwzBh.NavBar_open__YHqzT {
+  display: block;
+}
+.NavBar_nav__c4VnL.NavBar_close__JvI_L .NavBar_icon__AwzBh.NavBar_hide__lO0rp {
+  display: none;
+}
+.NavBar_nav__c4VnL.NavBar_close__JvI_L .NavBar_text__hKqbJ {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.NavBar_nav__menu__sqijC {
+  padding: 0 16px;
+}
+.NavBar_nav__menu__logo__OChXY {
+  color: red;
+}
+.NavBar_nav__menu__logo__shadow__vbvpW {
+  position: absolute;
+  left: -30px;
+  top: -25px;
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+.NavBar_nav__menu__links__bCrpG {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+.NavBar_nav__menu__links__item__hnnx_ {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  width: 147px;
+}
+.NavBar_nav__menu__links__item__hnnx_ .NavBar_text__hKqbJ {
+  opacity: 1;
+  transition: opacity 3s ease;
+}
+.NavBar_nav__menu__links__item__hnnx_:hover .NavBar_text__hKqbJ, .NavBar_nav__menu__links__item__hnnx_.NavBar_isActive__p3DJz .NavBar_text__hKqbJ {
+  color: #a9d800;
+}
+.NavBar_nav__menu__links__item__hnnx_:hover path, .NavBar_nav__menu__links__item__hnnx_.NavBar_isActive__p3DJz path {
+  fill: #a9d800;
+}
+.NavBar_nav__menu__links__item__hnnx_.NavBar_isStroke__Puex0:hover path, .NavBar_nav__menu__links__item__hnnx_.NavBar_isStroke__Puex0.NavBar_isActive__p3DJz path {
+  stroke: #a9d800;
+  fill: none;
+}
+.NavBar_nav__menu__links__item__hnnx_.NavBar_isSelected__LBYF5 {
+  filter: brightness(70%);
+}
+.NavBar_nav__profile__o__S2 {
+  border-top: 1px solid #323232;
+  padding: 20px 26px 66px;
+  transition: all 1.2s ease;
+}
+.NavBar_nav__profile__o__S2.NavBar_isLogin__n8neH {
+  padding: 20px 20px 40px 16px;
+}
+.NavBar_nav__profile__shadow__w1_xE {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.NavBar_close__JvI_L .NavBar_nav__profile__o__S2 {
+  padding: 24px 16px 34px;
+}
+.NavBar_nav__profile-login__kFVQE {
+  display: flex;
+  padding: 0;
+  gap: 8px;
+  align-items: center;
+  z-index: 4;
+  position: relative;
+}
+.NavBar_nav__profile-login__kFVQE.NavBar_isSelected__LBYF5 {
+  filter: brightness(70%);
+}
+.NavBar_nav__profile-login__kFVQE .NavBar_text__hKqbJ {
+  opacity: 1;
+  transition: opacity 3s ease;
+}
+.NavBar_nav__profile-login__kFVQE:hover .NavBar_text__hKqbJ, .NavBar_nav__profile-login__kFVQE.NavBar_isActive__p3DJz .NavBar_text__hKqbJ {
+  color: #a9d800;
+}
+.NavBar_nav__profile-login__kFVQE:hover path, .NavBar_nav__profile-login__kFVQE.NavBar_isActive__p3DJz path {
+  stroke: #a9d800;
+}
+.NavBar_nav__profile--info__vjY36 {
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+.NavBar_nav__profile--info__vjY36.NavBar_isSelected__LBYF5 {
+  filter: brightness(70%);
+}
+.NavBar_nav__profile--info__block__RyJwB {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.NavBar_nav__profile--info__name__y03EM {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.NavBar_nav__profile--info__progress__JLTMn {
+  width: 104px;
+  width: 100%;
+  height: 2px;
+  background-color: #323232;
+  border-radius: 9px;
+  overflow: hidden;
+}
+.NavBar_nav__profile--info__progress__JLTMn::-webkit-progress-bar {
+  background-color: #323232;
+  border-radius: 9px;
+}
+.NavBar_nav__profile--info__progress__JLTMn::-webkit-progress-value {
+  height: 100%;
+  background: #a9d800;
+}
+.NavBar_nav__profile--info__size__oacXV {
+  font-size: 12px;
+  line-height: 16px;
+}
+.NavBar_nav__profile--info__avatar__Wp9cC {
+  border-radius: 50%;
+  z-index: 9;
+}
+.NavBar_nav__logout__rXIvz {
+  position: absolute;
+  bottom: 129px;
+  left: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.NavBar_nav__settings__gubUQ {
+  position: absolute;
+  bottom: 129px;
+  left: 26px;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/features/ConnectionNotification/ui/ConnectionNotification.module.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ConnectionNotification_notification__7emlh {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: rgba(24, 25, 26, 0.7);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 7px;
+  z-index: 1005;
+}
+.ConnectionNotification_notification__7emlh.ConnectionNotification_isVisible___gm6Q {
+  display: flex;
+}
+.ConnectionNotification_notification__text__ptyQ3 {
+  font-size: 16px;
+  line-height: 22px;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[9].use[5]!./src/views/Layout/ui/Layout.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Layout_layout__wYWau {
+  display: flex;
+}
+.Layout_layout__wYWau .Layout_navBar__02eNY {
+  display: none;
+}
+@media only screen and (min-width: 1160px) {
+  .Layout_layout__wYWau .Layout_navBar__02eNY {
+    display: block;
+  }
+}
+.Layout_layout__wYWau .Layout_main__TAK_s {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Layout_stream__h_Vvq {
+  display: none;
+  object-fit: contain;
+}
+.Layout_stream__status__yYlWu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1600;
+  transform: translate(-50%, -50%);
+}
+.Layout_stream__status__yYlWu.Layout_isTest____9u_ {
+  display: none;
+}

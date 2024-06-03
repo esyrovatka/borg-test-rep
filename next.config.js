@@ -5,6 +5,9 @@ const nextConfig = {
     prependData: `@import "helper.scss";`,
   },
   output: "export",
+  images: {
+    unoptimized: true,
+  },
   experimental: {
     missingSuspenseWithCSRBailout: false,
   },
@@ -33,9 +36,9 @@ const nextConfig = {
           },
         },
       ],
-    })
-    return config
+    });
+    return config;
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
