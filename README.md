@@ -34,4 +34,4 @@ NEXT_PUBLIC_ONE_DRIVE_BASE_URL="https://graph.microsoft.com/v1.0/me/"
 NEXT_PUBLIC_BORG_URL="https://borg-ephemeral.azurewebsites.net/ephemeral/"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://127.0.0.1:4443/](https://127.0.0.1:4443/) with your browser to see the result.

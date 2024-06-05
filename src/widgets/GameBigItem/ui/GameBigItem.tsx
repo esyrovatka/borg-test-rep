@@ -1,13 +1,16 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FC, useEffect } from "react"
+import { FC, useCallback } from "react"
 
 import ControllerIcon from "@/public/assets/icons/controller.svg"
 import PlayIcon from "@/public/assets/icons/play.svg"
 
 import { TrialPlayModal } from "@/features/TrialPlayModal"
 
-import { classNames, useToggleModal } from "@/shared/lib"
+import { isDisabledPageNavigateSelector, keyboardSliceAction } from "@/entities/Keyboard"
+
+import { classNames, useAppDispatch, useAppSelector, useToggleModal } from "@/shared/lib"
+import { useKeyboardNavigate } from "@/shared/lib/hooks"
 import { PrimaryButton, Typography } from "@/shared/ui"
 
 import { IGameBigItemProps } from "../types"
@@ -16,25 +19,24 @@ import styles from "./GameBigItem.module.scss"
 export const GameBigItem: FC<IGameBigItemProps> = ({ title, poster_src, lastPlayData, id, isSelected }) => {
   const linkToGame = `/game/${id}`
   const { isModalOpen, onCloseModal, onOpenModal } = useToggleModal()
+  const dispatch = useAppDispatch()
+  const isNavDisabled = useAppSelector(isDisabledPageNavigateSelector)
 
-  useEffect(() => {
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Enter") onOpenModal()
-    }
+  const handleOpen = useCallback(() => {
+    dispatch(keyboardSliceAction.onDisabledPageNavigate(true))
+    onOpenModal()
+  }, [dispatch, onOpenModal])
 
-    if (isSelected) window.addEventListener("keydown", handleKeyDown)
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown)
-    }
-  }, [isSelected, onOpenModal, isModalOpen])
+  useKeyboardNavigate({
+    enterAction: isSelected && !isNavDisabled ? handleOpen : () => {},
+  })
 
   return (
     <div className={classNames(styles.item, { [styles.selected]: isSelected })}>
       <div className={classNames(styles["item__picture-corner"], {}, [styles.left])} />
       <div className={classNames(styles["item__picture-corner"], {}, [styles.right])} />
 
-      <TrialPlayModal isModalOpen={isModalOpen} onCloseModal={onCloseModal} />
+      {isModalOpen && <TrialPlayModal isModalOpen={isModalOpen} onCloseModal={onCloseModal} />}
       <Link href={linkToGame}>
         <Typography weight="six" className={styles.item__title}>
           {title}

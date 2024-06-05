@@ -7,6 +7,7 @@ import { GameStores, MyActivity, Plan, ProfileCard, Settings } from "./ui"
 
 export const ProfilePage = () => {
   const { isNavBarOpenOpen, user, isUserLoad, handleConnect, platformGames, handleDisconnect } = useProfilePage()
+
   if (isUserLoad) return <Loader />
 
   return (

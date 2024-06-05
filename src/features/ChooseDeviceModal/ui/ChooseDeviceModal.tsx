@@ -1,6 +1,6 @@
 "use client"
 
-import { FC, useCallback, useEffect, useState } from "react"
+import { FC, useCallback, useState } from "react"
 
 import CopyIcon from "@/public/assets/icons/copy.svg"
 import PlayIcon from "@/public/assets/icons/play.svg"
@@ -12,9 +12,11 @@ import { launchGame } from "@/features/LaunchGame"
 import { beginLogin } from "@/features/LaunchGame/game"
 import { IMinecraftLoginInit } from "@/features/LaunchGame/game/beginLogin"
 
+import { keyboardSliceAction } from "@/entities/Keyboard"
 import { getStreamElemSelector } from "@/entities/Stream"
 
 import { classNames, useAppDispatch, useAppSelector } from "@/shared/lib"
+import { useKeyboardNavigate } from "@/shared/lib/hooks"
 import { Modal, PrimaryButton, Typography } from "@/shared/ui"
 
 import { deviceList } from "../const"
@@ -31,6 +33,11 @@ export const ChooseDeviceModal: FC<IChooseDeviceModalProps> = ({ isOpen, onClose
   const startGame = () => {
     launchGame(title, videoElement, dispatch, msRes)
   }
+
+  const handleClose = useCallback(() => {
+    onClose()
+    dispatch(keyboardSliceAction.onDisabledPageNavigate(false))
+  }, [onClose, dispatch])
 
   const handleClick = async () => {
     if (title === "Minecraft") {
@@ -56,28 +63,15 @@ export const ChooseDeviceModal: FC<IChooseDeviceModalProps> = ({ isOpen, onClose
 
   const [selectedDeviceIndex, setSelectedDeviceIndex] = useState<number | null>(null)
 
-  useEffect(() => {
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Enter") launchGame(title, videoElement, dispatch)
-      if (event.key === "ArrowUp") {
-        event.preventDefault()
-        setSelectedDeviceIndex(prev => (prev ? prev - 1 : 1))
-      }
-      if (event.key === "ArrowDown") {
-        event.preventDefault()
-        setSelectedDeviceIndex(prev => (!prev ? 1 : 0))
-      }
-      if (event.key === "Escape") onClose()
-    }
-
-    window.addEventListener("keydown", handleKeyDown)
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown)
-    }
-  }, [dispatch, onClose, title, videoElement])
+  useKeyboardNavigate({
+    enterAction: () => launchGame(title, videoElement, dispatch),
+    escapeAction: handleClose,
+    arrowUpAction: () => setSelectedDeviceIndex(prev => (prev ? prev - 1 : 1)),
+    arrowDownAction: () => setSelectedDeviceIndex(prev => (!prev ? 1 : 0)),
+  })
 
   return (
-    <Modal className={styles.modal} isOpen={isOpen} onClose={onClose}>
+    <Modal className={styles.modal} isOpen={isOpen} onClose={handleClose}>
       {isLoading && <Loader withText={false} />}
       {isMinecraftCodeVisible && !isLoading && (
         <>

@@ -28,3 +28,6 @@ export const recentlyPlayedGames = [
     lastPlayData: "11/28/2023",
   },
 ]
+
+export const TABLET_BREAKPOINT = 1024
+export const MOBILE_BREAKPOINT = 768
