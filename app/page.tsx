@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import { FC } from "react"
+import { FC } from "react";
 
-import { HomePage } from "@/views"
+import { HomePage } from "@/views";
 
 const Home: FC = () => {
-  return <HomePage />
-}
+  console.log("env", process.env.NODE_ENV);
+  return <HomePage />;
+};
 
-export default Home
+export default Home;
