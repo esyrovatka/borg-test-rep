@@ -1,45 +1,36 @@
-import { GameBigItem } from "@/widgets/GameBigItem"
-import { GameItem } from "@/widgets/GameItem"
+import { GameBigItem } from "@/widgets/GameBigItem";
+import { GameItem } from "@/widgets/GameItem";
 
-import { Slider } from "@/features/Slider"
+import { Slider } from "@/features/Slider";
 
 import {
   getImmediatelyAvailableGamesSelector,
   getMostPopularGamesSelector,
   getNewlyAddedGamesSelector,
   getRecentlyPlayedGamesSelector,
-} from "@/entities/Games"
-import { isNavBarOpenSelector } from "@/entities/NavBar"
+} from "@/entities/Games";
+import { isNavBarOpenSelector } from "@/entities/NavBar";
 
-import { classNames, useAppSelector } from "@/shared/lib"
-import { Typography } from "@/shared/ui"
+import { classNames, useAppSelector } from "@/shared/lib";
+import { Typography } from "@/shared/ui";
 
-import styles from "./HomePage.module.scss"
-import { useHomePage } from "./lib"
-import { EmptyState } from "./ui/EmptyState"
+import styles from "./HomePage.module.scss";
+import { useHomePage } from "./lib";
+import { EmptyState } from "./ui/EmptyState";
 
 export const HomePage = () => {
-  const isNavBarOpenOpen = useAppSelector(isNavBarOpenSelector)
-  const mostPopularGames = useAppSelector(getMostPopularGamesSelector)
-  const newlyAddedGames = useAppSelector(getNewlyAddedGamesSelector)
-  const immediatelyAvailableGames = useAppSelector(getImmediatelyAvailableGamesSelector)
-  const recentlyPlayedGames = useAppSelector(getRecentlyPlayedGamesSelector)
-  const {
-    selectedGame,
-    recentlyPlayedGamesRef,
-    mostPopularGamesRef,
-    newlyAddedGamesRef,
-    immediatelyAvailableGamesRef,
-    isNavBarNavigate,
-  } = useHomePage()
+  const isNavBarOpenOpen = useAppSelector(isNavBarOpenSelector);
+  const mostPopularGames = useAppSelector(getMostPopularGamesSelector);
+  const newlyAddedGames = useAppSelector(getNewlyAddedGamesSelector);
+  const immediatelyAvailableGames = useAppSelector(getImmediatelyAvailableGamesSelector);
+  const recentlyPlayedGames = useAppSelector(getRecentlyPlayedGamesSelector);
+  const { selectedGame, recentlyPlayedGamesRef, mostPopularGamesRef, newlyAddedGamesRef, immediatelyAvailableGamesRef, isNavBarNavigate } =
+    useHomePage();
 
-  if (
-    !recentlyPlayedGames.length &&
-    !immediatelyAvailableGames.length &&
-    !newlyAddedGames.length &&
-    !mostPopularGames.length
-  ) {
-    return <EmptyState />
+  console.log("here test env::", process.env.NEXT_PUBLIC_BORG_URL);
+
+  if (!recentlyPlayedGames.length && !immediatelyAvailableGames.length && !newlyAddedGames.length && !mostPopularGames.length) {
+    return <EmptyState />;
   }
 
   return (
@@ -97,5 +88,5 @@ export const HomePage = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
