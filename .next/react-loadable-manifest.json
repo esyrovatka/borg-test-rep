@@ -1,16 +1,16 @@
 {
   "node_modules/@azure/msal-browser/dist/controllers/ControllerFactory.mjs -> ./NestedAppAuthController.mjs": {
-    "id": "node_modules/@azure/msal-browser/dist/controllers/ControllerFactory.mjs -> ./NestedAppAuthController.mjs",
+    "id": 4920,
     "files": [
-      "static/chunks/_app-pages-browser_node_modules_azure_msal-browser_dist_controllers_NestedAppAuthController_mjs.js"
+      "static/chunks/920.c6bb2982e08494bf.js"
     ]
   },
   "node_modules/@azure/msal-browser/dist/controllers/ControllerFactory.mjs -> ./StandardController.mjs": {
-    "id": "node_modules/@azure/msal-browser/dist/controllers/ControllerFactory.mjs -> ./StandardController.mjs",
+    "id": 9376,
     "files": []
   },
   "node_modules/@azure/msal-browser/dist/telemetry/BrowserPerformanceClient.mjs -> ./BrowserPerformanceMeasurement.mjs": {
-    "id": "node_modules/@azure/msal-browser/dist/telemetry/BrowserPerformanceClient.mjs -> ./BrowserPerformanceMeasurement.mjs",
+    "id": null,
     "files": []
   }
 }

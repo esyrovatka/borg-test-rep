@@ -60,15 +60,33 @@
     }
 
     &__item {
-      height: 36px;
+      height: 50px;
       display: flex;
       align-items: center;
       gap: 12px;
       cursor: pointer;
+      padding: 15px 2px;
+
+      &.active {
+        border: 1px solid $color-neutral-light70;
+        border-radius: 5px;
+      }
     }
 
     &__image {
       object-fit: contain;
+    }
+  }
+
+  &__keyboard {
+    position: absolute;
+    top: 90px;
+    width: calc(100% - 110px);
+    left: 55px;
+    z-index: 10;
+
+    &.withResult {
+      top: calc(90px + 150px);
     }
   }
 

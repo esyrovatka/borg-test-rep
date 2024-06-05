@@ -1,15 +1,17 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FC, useEffect } from "react"
+import { FC, useCallback } from "react"
 
 import ControllerIcon from "@/public/assets/icons/controller.svg"
 import PlayIcon from "@/public/assets/icons/play.svg"
 
 import { ChooseDeviceModal } from "@/features/ChooseDeviceModal"
 
+import { isDisabledPageNavigateSelector, keyboardSliceAction } from "@/entities/Keyboard"
 import { getUserDataSelector } from "@/entities/User"
 
-import { classNames, useAppSelector, useToggleModal } from "@/shared/lib"
+import { classNames, useAppDispatch, useAppSelector, useToggleModal } from "@/shared/lib"
+import { useKeyboardNavigate } from "@/shared/lib/hooks"
 import { Button, Typography } from "@/shared/ui"
 
 import { availableGames } from "../const"
@@ -20,20 +22,18 @@ export const GameItem: FC<IGameItemProps> = ({ title, poster_src, id, status, is
   const { isModalOpen, onOpenModal, onCloseModal } = useToggleModal()
   const linkToGame = `/game/${id}`
   const isUser = useAppSelector(getUserDataSelector)
-
+  const dispatch = useAppDispatch()
   const isAvailableGame = availableGames.includes(title)
+  const isNavDisabled = useAppSelector(isDisabledPageNavigateSelector)
 
-  useEffect(() => {
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Enter") onOpenModal()
-    }
+  const handleOpen = useCallback(() => {
+    dispatch(keyboardSliceAction.onDisabledPageNavigate(true))
+    onOpenModal()
+  }, [dispatch, onOpenModal])
 
-    if (isSelected) window.addEventListener("keydown", handleKeyDown)
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown)
-    }
-  }, [isSelected, onOpenModal, isModalOpen])
+  useKeyboardNavigate({
+    enterAction: isSelected && !isNavDisabled ? handleOpen : () => {},
+  })
 
   return (
     <div className={styles.item}>
@@ -71,7 +71,7 @@ export const GameItem: FC<IGameItemProps> = ({ title, poster_src, id, status, is
           )}
         </Link>
 
-        <Button onClick={onOpenModal} isDisabled={!isAvailableGame}>
+        <Button onClick={handleOpen} isDisabled={!isAvailableGame}>
           <PlayIcon />
           Play
         </Button>

@@ -1,13 +1,22 @@
-import { FC } from "react"
+import { FC, useCallback } from "react"
 
+import { keyboardSliceAction } from "@/entities/Keyboard"
+
+import { useAppDispatch } from "@/shared/lib"
 import { Button, Modal, PrimaryButton, Typography } from "@/shared/ui"
 
 import { ITrialPlayModalProps } from "../types"
 import styles from "./TrialPlayModal.module.scss"
 
 export const TrialPlayModal: FC<ITrialPlayModalProps> = ({ isModalOpen, onCloseModal }) => {
+  const dispatch = useAppDispatch()
+  const handleClose = useCallback(() => {
+    onCloseModal()
+    dispatch(keyboardSliceAction.onDisabledPageNavigate(false))
+  }, [onCloseModal, dispatch])
+
   return (
-    <Modal isOpen={isModalOpen} onClose={onCloseModal} className={styles.modal}>
+    <Modal isOpen={isModalOpen} onClose={handleClose} className={styles.modal}>
       <Typography weight="seven" className={styles.modal__title}>
         Please login to start playing
       </Typography>

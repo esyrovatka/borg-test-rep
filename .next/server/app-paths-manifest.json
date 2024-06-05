@@ -1,3 +1,8 @@
 {
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/UIKitExplorer/page": "app/UIKitExplorer/page.js",
+  "/myGames/page": "app/myGames/page.js",
+  "/page": "app/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/setup/page": "app/setup/page.js"
 }

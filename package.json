@@ -16,11 +16,14 @@
     "axios": "^1.6.5",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-unused-imports": "^3.0.0",
-    "next": "14.2.3",
+    "next": "^14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-redux": "^9.0.4",
+    "react-simple-keyboard": "^3.7.123",
     "react-toastify": "^10.0.5",
+    "simple-keyboard": "^3.7.83",
+    "simple-keyboard-key-navigation": "^2.4.246",
     "swiper": "^11.0.5"
   },
   "devDependencies": {

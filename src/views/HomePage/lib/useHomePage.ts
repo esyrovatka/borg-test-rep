@@ -1,114 +1,118 @@
-import { useCallback, useEffect, useRef, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 
-import { isNavBarSelector, keyboardSliceAction } from "@/entities/Keyboard"
+import { toast } from "react-toastify"
+
+import {
+  isDisabledPageNavigateSelector,
+  isHeaderSearchSelector,
+  isNavBarSelector,
+  keyboardSliceAction,
+} from "@/entities/Keyboard"
 
 import { useAppDispatch, useAppSelector } from "@/shared/lib"
+import { useKeyboardNavigate, useWindowSize } from "@/shared/lib/hooks"
+
+import { MOBILE_BREAKPOINT, TABLET_BREAKPOINT } from "../const"
 
 const useHomePage = () => {
-  const isNavBar = useAppSelector(isNavBarSelector)
-  const [isNavBarNavigate, setIsNavBarNavigate] = useState<boolean>(false)
-
   const dispatch = useAppDispatch()
+  const isNavBarNavigate = useAppSelector(isNavBarSelector)
+  const isHeaderSearch = useAppSelector(isHeaderSearchSelector)
+  const [isNavigateEnabled, setIsNavigateEnabled] = useState<boolean>(true)
+  const { width: screenWidth } = useWindowSize()
+  const [gamepadConnected, setGamepadConnected] = useState<boolean>(false)
 
-  const changeNavigateToNavBar = useCallback(() => {
-    dispatch(keyboardSliceAction.onChangeIsNavBar())
-  }, [dispatch])
+  const isNavDisabled = useAppSelector(isDisabledPageNavigateSelector)
 
-  const [selectedGame, setSelectedGame] = useState<{ row: number | null; item: number }>({
+  const stepCount = useMemo(() => {
+    if (screenWidth < MOBILE_BREAKPOINT) return 1
+    if (screenWidth < TABLET_BREAKPOINT) return 2
+    return 3
+  }, [screenWidth])
+
+  const changeNavigateToNavBar = () => dispatch(keyboardSliceAction.onChangeIsNavBar())
+
+  const [selectedGame, setSelectedGame] = useState<{ row: number; item: number }>({
     row: 0,
     item: 1,
   })
 
-  const handleKeyDown = useCallback(
-    (event: KeyboardEvent) => {
-      switch (event.key) {
-        case "ArrowUp":
-          event.preventDefault()
-          if (isNavBarNavigate) break
-
-          setSelectedGame(prevState => ({
-            ...prevState,
-            ...((prevState.row !== 4 || prevState.item === 1) && { row: Math.max((prevState.row || 1) - 1, 1) }),
-            ...(prevState.item > 1 && { item: prevState.item - 1 }),
-          }))
-          break
-        case "ArrowDown":
-          event.preventDefault()
-          if (isNavBarNavigate) break
-
-          setSelectedGame(prevState => ({
-            ...prevState,
-            ...(prevState.row !== 4 && { row: Math.min((prevState.row || 0) + 1, 4) }),
-            ...(prevState.row === 4 ? { item: Math.min(prevState.item + 1, 12) } : { item: 1 }),
-          }))
-          break
-        case "ArrowLeft":
-          event.preventDefault()
-
-          if (selectedGame.row) {
-            if (selectedGame.item === 1) {
-              changeNavigateToNavBar()
-            } else {
-              setSelectedGame(prevState => ({
-                ...prevState,
-                item: prevState.item - 1,
-              }))
-            }
-          }
-
-          break
-        case "ArrowRight":
-          event.preventDefault()
-
-          if (isNavBarNavigate) {
-            changeNavigateToNavBar()
-          } else if (selectedGame.row) {
-            setSelectedGame(prevState => ({
-              ...prevState,
-              item: prevState.item === 12 ? 1 : (prevState.item || 0) + 1,
-            }))
-          }
-
-          break
-        default:
-          break
-      }
-    },
-    [changeNavigateToNavBar, isNavBarNavigate, selectedGame.item, selectedGame.row],
-  )
-
-  const stopKeyNavigate = useCallback(
-    (event: KeyboardEvent) => {
-      if (event.key === "Enter") {
-        document.removeEventListener("keydown", handleKeyDown)
-      }
-    },
-    [handleKeyDown],
-  )
-
-  const returnKeyNavigate = useCallback(
-    (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        document.addEventListener("keydown", handleKeyDown)
-      }
-    },
-    [handleKeyDown],
-  )
-
-  useEffect(() => {
-    document.addEventListener("keydown", handleKeyDown)
-    document.addEventListener("keydown", stopKeyNavigate)
-    document.addEventListener("keydown", returnKeyNavigate)
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown)
-      document.removeEventListener("keydown", stopKeyNavigate)
-      document.removeEventListener("keydown", returnKeyNavigate)
+  const arrowUp = () => {
+    if (!isNavigateEnabled) return
+    if (isNavBarNavigate) return
+    if (isNavDisabled) return
+    if (selectedGame.row === 1) {
+      dispatch(keyboardSliceAction.onChangeIsHeaderSearch())
+      setSelectedGame(prev => ({ ...prev, row: 0 }))
+    } else {
+      setSelectedGame(prevState => ({
+        ...prevState,
+        ...((prevState.row !== 4 || prevState.item < 4) && { row: (prevState.row || 1) - 1, item: 1 }),
+        ...(prevState.item > 3 && { item: prevState.item - stepCount }),
+      }))
     }
-  }, [handleKeyDown, returnKeyNavigate, stopKeyNavigate])
+  }
+
+  const arrowDown = () => {
+    if (!isNavigateEnabled) return
+    if (isHeaderSearch) return
+    if (isNavBarNavigate) return
+    if (isNavDisabled) return
+    setSelectedGame(prevState => ({
+      ...prevState,
+      ...(prevState.row !== 4 && { row: (prevState.row || 0) + 1 }),
+      ...(prevState.row === 4 ? { item: Math.min(prevState.item + stepCount, 12) } : { item: 1 }),
+    }))
+  }
+
+  const arrowLeft = () => {
+    if (!isNavigateEnabled) return
+    if (isHeaderSearch) return
+    if (isNavDisabled) return
+    if (selectedGame.row) {
+      if (selectedGame.item === 1) {
+        changeNavigateToNavBar()
+      } else {
+        setSelectedGame(prevState => ({
+          ...prevState,
+          item: prevState.item - 1,
+        }))
+      }
+    }
+  }
+
+  const arrowRight = () => {
+    if (!isNavigateEnabled) return
+    if (isHeaderSearch) return
+    if (isNavDisabled) return
+    if (isNavBarNavigate) {
+      changeNavigateToNavBar()
+    } else if (selectedGame.row) {
+      setSelectedGame(prevState => ({
+        ...prevState,
+        item: prevState.item === 12 ? 1 : (prevState.item || 0) + 1,
+      }))
+    }
+  }
+
+  const { gamepad } = useKeyboardNavigate({
+    arrowDownAction: arrowDown,
+    arrowUpAction: arrowUp,
+    arrowLeftAction: arrowLeft,
+    arrowRightAction: arrowRight,
+  })
 
   useEffect(() => {
-    setIsNavBarNavigate(isNavBar)
-  }, [isNavBar])
+    if (gamepad && !gamepadConnected) {
+      setGamepadConnected(true)
+      toast.success("gamepad connect")
+    }
+
+    if (!gamepad && gamepadConnected) {
+      setGamepadConnected(false)
+      toast.info("gamepad disconnect")
+    }
+  }, [gamepad, gamepadConnected])
 
   const recentlyPlayedGamesRef = useRef<HTMLDivElement | null>(null)
   const mostPopularGamesRef = useRef<HTMLDivElement | null>(null)
@@ -139,7 +143,6 @@ const useHomePage = () => {
     mostPopularGamesRef,
     newlyAddedGamesRef,
     immediatelyAvailableGamesRef,
-    handleKeyDown,
     isNavBarNavigate,
   }
 }
